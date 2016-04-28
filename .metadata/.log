@@ -1,0 +1,1942 @@
+!SESSION 2016-04-28 12:05:40.237 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -showlocation -keyring /Users/Ro/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -showlocation -keyring /Users/Ro/.eclipse_keyring -showlocation
+
+This is a continuation of log file /Users/Ro/CloudworkspaceDemo/.metadata/.bak_0.log
+Created Time: 2016-04-28 12:06:20.306
+
+!ENTRY org.eclipse.osgi 2 0 2016-04-28 12:06:20.306
+!MESSAGE While loading class "com.tibco.xpd.resources.wc.gmf.XpdEditingDomainFactory$CachedResourceToReadOnlyMap", thread "Thread[Worker-1,5,main]" timed out waiting (5001ms) for thread "Thread[main,6,main]" to finish starting bundle "com.tibco.xpd.resources_4.0.0.002 [266]". To avoid deadlock, thread "Thread[Worker-1,5,main]" is proceeding but "com.tibco.xpd.resources.wc.gmf.XpdEditingDomainFactory$CachedResourceToReadOnlyMap" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: Unable to acquire the state change lock for the module: osgi.identity; osgi.identity="com.tibco.xpd.resources"; type="osgi.bundle"; version:Version="4.0.0.002"; singleton:="true" [id=266] STARTED [STARTED]
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:329)
+	at org.eclipse.osgi.container.Module.start(Module.java:389)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:320)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:337)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at com.tibco.xpd.resources.wc.gmf.XpdEditingDomainFactory.createEditingDomain(XpdEditingDomainFactory.java:135)
+	at com.tibco.xpd.resources.wc.gmf.XpdEditingDomainFactory.createEditingDomain(XpdEditingDomainFactory.java:83)
+	at org.eclipse.gmf.runtime.diagram.core.DiagramEditingDomainFactory.createEditingDomain(DiagramEditingDomainFactory.java:321)
+	at org.eclipse.emf.transaction.impl.EditingDomainManager.createEditingDomain(EditingDomainManager.java:105)
+	at org.eclipse.emf.transaction.impl.TransactionalEditingDomainImpl$RegistryImpl.getEditingDomain(TransactionalEditingDomainImpl.java:1238)
+	at com.tibco.xpd.resources.XpdResourcesPlugin.getEditingDomain(XpdResourcesPlugin.java:119)
+	at com.tibco.amf.tools.composite.resources.CompositeResourcesActivator.start(CompositeResourcesActivator.java:133)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:771)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:764)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:721)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:936)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:319)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:571)
+	at org.eclipse.osgi.container.Module.start(Module.java:439)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:320)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:36)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:391)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:337)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at com.tibco.bw.core.design.resource.BWResourcePluginActivator$Implementation.<init>(BWResourcePluginActivator.java:148)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at java.lang.Class.newInstance(Class.java:383)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.loadBundleActivator(BundleContextImpl.java:755)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:706)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:936)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:319)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:571)
+	at org.eclipse.osgi.container.Module.start(Module.java:439)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:320)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:36)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:391)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:337)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Class.java:2595)
+	at java.lang.Class.getConstructor0(Class.java:2895)
+	at java.lang.Class.newInstance(Class.java:354)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.loadBundleActivator(BundleContextImpl.java:755)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:706)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:936)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:319)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:571)
+	at org.eclipse.osgi.container.Module.start(Module.java:439)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:320)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:337)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:568)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin$1.run(WorkbenchPlugin.java:294)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:52)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:289)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition$1.run(LightweightDecoratorDefinition.java:125)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:867)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.internalGetDecorator(LightweightDecoratorDefinition.java:120)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:255)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:83)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:367)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:349)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:372)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:332)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.osgi 2 0 2016-04-28 12:06:20.370
+!MESSAGE While loading class "com.tibco.amf.tools.composite.resources.wc.DistributionWorkingCopy", thread "Thread[main,6,main]" timed out waiting (5001ms) for thread "Thread[Worker-1,5,main]" to finish starting bundle "com.tibco.amf.tools.composite.resources_3.901.0.003 [41]". To avoid deadlock, thread "Thread[main,6,main]" is proceeding but "com.tibco.amf.tools.composite.resources.wc.DistributionWorkingCopy" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: Unable to acquire the state change lock for the module: osgi.identity; osgi.identity="com.tibco.amf.tools.composite.resources"; type="osgi.bundle"; version:Version="3.901.0.003"; singleton:="true" [id=41] STARTED [STARTED]
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:329)
+	at org.eclipse.osgi.container.Module.start(Module.java:389)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:320)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:337)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at com.tibco.amf.tools.composite.resources.internal.distribution.DistributionDependencyProvider.getWorkingCopyClass(DistributionDependencyProvider.java:55)
+	at com.tibco.xpd.resources.internal.wc.WorkingCopyFactoriesManager.o00000(WorkingCopyFactoriesManager.java:227)
+	at com.tibco.xpd.resources.internal.wc.WorkingCopyFactoriesManager.<init>(WorkingCopyFactoriesManager.java:84)
+	at com.tibco.xpd.resources.XpdResourcesPlugin.start(XpdResourcesPlugin.java:132)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:771)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:764)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:721)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:936)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:319)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:571)
+	at org.eclipse.osgi.container.Module.start(Module.java:439)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:320)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:36)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:391)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:337)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Class.java:2595)
+	at java.lang.Class.getConstructor0(Class.java:2895)
+	at java.lang.Class.newInstance(Class.java:354)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.loadBundleActivator(BundleContextImpl.java:755)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:706)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:936)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:319)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:571)
+	at org.eclipse.osgi.container.Module.start(Module.java:439)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:320)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:337)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:568)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin$1.run(WorkbenchPlugin.java:294)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:289)
+	at org.eclipse.ui.internal.decorators.FullDecoratorDefinition$1.run(FullDecoratorDefinition.java:65)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:867)
+	at org.eclipse.ui.internal.decorators.FullDecoratorDefinition.internalGetDecorator(FullDecoratorDefinition.java:59)
+	at org.eclipse.ui.internal.decorators.FullDecoratorDefinition.decorateText(FullDecoratorDefinition.java:134)
+	at org.eclipse.ui.internal.decorators.FullTextDecoratorRunnable.run(FullTextDecoratorRunnable.java:27)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.DecoratorManager.safeDecorateText(DecoratorManager.java:586)
+	at org.eclipse.ui.internal.decorators.DecoratorManager.decorateText(DecoratorManager.java:538)
+	at org.eclipse.ui.internal.decorators.DecoratorManager$ManagedWorkbenchLabelDecorator.decorateText(DecoratorManager.java:163)
+	at org.eclipse.jface.viewers.DecoratingStyledCellLabelProvider.getStyledText(DecoratingStyledCellLabelProvider.java:207)
+	at org.eclipse.ui.internal.navigator.NavigatorDecoratingLabelProvider.getText(NavigatorDecoratingLabelProvider.java:221)
+	at org.eclipse.ui.internal.navigator.framelist.TreeFrame.<init>(TreeFrame.java:74)
+	at org.eclipse.ui.internal.navigator.framelist.TreeViewerFrameSource.createFrame(TreeViewerFrameSource.java:59)
+	at org.eclipse.ui.internal.navigator.CommonNavigatorFrameSource.createFrame(CommonNavigatorFrameSource.java:40)
+	at org.eclipse.ui.internal.navigator.framelist.TreeViewerFrameSource.getCurrentFrame(TreeViewerFrameSource.java:84)
+	at org.eclipse.ui.internal.navigator.framelist.TreeViewerFrameSource.getFrame(TreeViewerFrameSource.java:98)
+	at org.eclipse.ui.internal.navigator.framelist.FrameList.init(FrameList.java:166)
+	at org.eclipse.ui.internal.navigator.framelist.FrameList.<init>(FrameList.java:55)
+	at org.eclipse.ui.navigator.CommonViewer.createFrameList(CommonViewer.java:571)
+	at org.eclipse.ui.navigator.CommonNavigator.createPartControl(CommonNavigator.java:221)
+	at org.eclipse.egit.ui.internal.repository.RepositoriesView.createPartControl(RepositoriesView.java:365)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:141)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.createPartControl(CompatibilityView.java:155)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:327)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:888)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:869)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:120)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:337)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:258)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:162)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:104)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:55)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:127)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:983)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$6.run(PartRenderingEngine.java:547)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:531)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:69)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:983)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1250)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:100)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:678)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:68)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:185)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:674)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:68)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:185)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:674)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:68)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveRenderer.processContents(PerspectiveRenderer.java:49)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:674)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:103)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:100)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.postProcess(PerspectiveStackRenderer.java:77)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:678)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:68)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:185)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:674)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:68)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:664)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:674)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1078)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.osgi 2 0 2016-04-28 12:06:25.310
+!MESSAGE While loading class "com.tibco.amf.tools.composite.resources.internal.refs.ReferencesServiceImpl", thread "Thread[Worker-1,5,main]" timed out waiting (5001ms) for thread "Thread[main,6,main]" to finish starting bundle "com.tibco.xpd.resources_4.0.0.002 [266]". To avoid deadlock, thread "Thread[Worker-1,5,main]" is proceeding but "com.tibco.amf.tools.composite.resources.internal.refs.ReferencesServiceImpl" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: Unable to acquire the state change lock for the module: osgi.identity; osgi.identity="com.tibco.xpd.resources"; type="osgi.bundle"; version:Version="4.0.0.002"; singleton:="true" [id=266] STARTED [STARTED]
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:329)
+	at org.eclipse.osgi.container.Module.start(Module.java:389)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:320)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:337)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at com.tibco.amf.tools.composite.resources.CompositeResourcesActivator.getFindReferencesService(CompositeResourcesActivator.java:187)
+	at com.tibco.amf.tools.composite.resources.CompositeResourcesActivator.start(CompositeResourcesActivator.java:141)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:771)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:764)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:721)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:936)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:319)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:571)
+	at org.eclipse.osgi.container.Module.start(Module.java:439)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:320)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:36)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:391)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:337)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at com.tibco.bw.core.design.resource.BWResourcePluginActivator$Implementation.<init>(BWResourcePluginActivator.java:148)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at java.lang.Class.newInstance(Class.java:383)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.loadBundleActivator(BundleContextImpl.java:755)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:706)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:936)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:319)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:571)
+	at org.eclipse.osgi.container.Module.start(Module.java:439)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:320)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:36)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:391)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:337)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Class.java:2595)
+	at java.lang.Class.getConstructor0(Class.java:2895)
+	at java.lang.Class.newInstance(Class.java:354)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.loadBundleActivator(BundleContextImpl.java:755)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:706)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:936)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:319)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:571)
+	at org.eclipse.osgi.container.Module.start(Module.java:439)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:320)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:337)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:568)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin$1.run(WorkbenchPlugin.java:294)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:52)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:289)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition$1.run(LightweightDecoratorDefinition.java:125)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:867)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.internalGetDecorator(LightweightDecoratorDefinition.java:120)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:255)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:83)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:367)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:349)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:372)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:332)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.osgi 2 0 2016-04-28 12:06:25.374
+!MESSAGE While loading class "com.tibco.amf.tools.composite.resources.internal.wc.SVarWCDependencyProvider", thread "Thread[main,6,main]" timed out waiting (5001ms) for thread "Thread[Worker-1,5,main]" to finish starting bundle "com.tibco.amf.tools.composite.resources_3.901.0.003 [41]". To avoid deadlock, thread "Thread[main,6,main]" is proceeding but "com.tibco.amf.tools.composite.resources.internal.wc.SVarWCDependencyProvider" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: Unable to acquire the state change lock for the module: osgi.identity; osgi.identity="com.tibco.amf.tools.composite.resources"; type="osgi.bundle"; version:Version="3.901.0.003"; singleton:="true" [id=41] STARTED [STARTED]
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:329)
+	at org.eclipse.osgi.container.Module.start(Module.java:389)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:320)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:337)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:568)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at com.tibco.xpd.resources.internal.wc.WorkingCopyFactoriesManager.o00000(WorkingCopyFactoriesManager.java:222)
+	at com.tibco.xpd.resources.internal.wc.WorkingCopyFactoriesManager.<init>(WorkingCopyFactoriesManager.java:84)
+	at com.tibco.xpd.resources.XpdResourcesPlugin.start(XpdResourcesPlugin.java:132)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:771)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:764)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:721)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:936)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:319)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:571)
+	at org.eclipse.osgi.container.Module.start(Module.java:439)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:320)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:36)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:391)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:337)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Class.java:2595)
+	at java.lang.Class.getConstructor0(Class.java:2895)
+	at java.lang.Class.newInstance(Class.java:354)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.loadBundleActivator(BundleContextImpl.java:755)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:706)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:936)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:319)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:571)
+	at org.eclipse.osgi.container.Module.start(Module.java:439)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:320)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:337)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:568)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin$1.run(WorkbenchPlugin.java:294)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:289)
+	at org.eclipse.ui.internal.decorators.FullDecoratorDefinition$1.run(FullDecoratorDefinition.java:65)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:867)
+	at org.eclipse.ui.internal.decorators.FullDecoratorDefinition.internalGetDecorator(FullDecoratorDefinition.java:59)
+	at org.eclipse.ui.internal.decorators.FullDecoratorDefinition.decorateText(FullDecoratorDefinition.java:134)
+	at org.eclipse.ui.internal.decorators.FullTextDecoratorRunnable.run(FullTextDecoratorRunnable.java:27)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.DecoratorManager.safeDecorateText(DecoratorManager.java:586)
+	at org.eclipse.ui.internal.decorators.DecoratorManager.decorateText(DecoratorManager.java:538)
+	at org.eclipse.ui.internal.decorators.DecoratorManager$ManagedWorkbenchLabelDecorator.decorateText(DecoratorManager.java:163)
+	at org.eclipse.jface.viewers.DecoratingStyledCellLabelProvider.getStyledText(DecoratingStyledCellLabelProvider.java:207)
+	at org.eclipse.ui.internal.navigator.NavigatorDecoratingLabelProvider.getText(NavigatorDecoratingLabelProvider.java:221)
+	at org.eclipse.ui.internal.navigator.framelist.TreeFrame.<init>(TreeFrame.java:74)
+	at org.eclipse.ui.internal.navigator.framelist.TreeViewerFrameSource.createFrame(TreeViewerFrameSource.java:59)
+	at org.eclipse.ui.internal.navigator.CommonNavigatorFrameSource.createFrame(CommonNavigatorFrameSource.java:40)
+	at org.eclipse.ui.internal.navigator.framelist.TreeViewerFrameSource.getCurrentFrame(TreeViewerFrameSource.java:84)
+	at org.eclipse.ui.internal.navigator.framelist.TreeViewerFrameSource.getFrame(TreeViewerFrameSource.java:98)
+	at org.eclipse.ui.internal.navigator.framelist.FrameList.init(FrameList.java:166)
+	at org.eclipse.ui.internal.navigator.framelist.FrameList.<init>(FrameList.java:55)
+	at org.eclipse.ui.navigator.CommonViewer.createFrameList(CommonViewer.java:571)
+	at org.eclipse.ui.navigator.CommonNavigator.createPartControl(CommonNavigator.java:221)
+	at org.eclipse.egit.ui.internal.repository.RepositoriesView.createPartControl(RepositoriesView.java:365)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:141)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.createPartControl(CompatibilityView.java:155)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:327)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:888)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:869)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:120)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:337)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:258)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:162)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:104)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:55)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:127)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:983)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$6.run(PartRenderingEngine.java:547)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:531)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:69)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:983)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1250)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:100)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:678)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:68)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:185)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:674)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:68)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:185)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:674)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:68)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveRenderer.processContents(PerspectiveRenderer.java:49)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:674)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:103)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:100)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.postProcess(PerspectiveStackRenderer.java:77)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:678)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:68)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:185)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:674)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:68)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:664)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:674)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1078)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.osgi 2 0 2016-04-28 12:06:30.314
+!MESSAGE While loading class "com.tibco.xpd.resources.indexer.IndexerItem", thread "Thread[Worker-1,5,main]" timed out waiting (5001ms) for thread "Thread[main,6,main]" to finish starting bundle "com.tibco.xpd.resources_4.0.0.002 [266]". To avoid deadlock, thread "Thread[Worker-1,5,main]" is proceeding but "com.tibco.xpd.resources.indexer.IndexerItem" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: Unable to acquire the state change lock for the module: osgi.identity; osgi.identity="com.tibco.xpd.resources"; type="osgi.bundle"; version:Version="4.0.0.002"; singleton:="true" [id=266] STARTED [STARTED]
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:329)
+	at org.eclipse.osgi.container.Module.start(Module.java:389)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:320)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:36)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:391)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:337)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at com.tibco.amf.tools.composite.resources.CompositeResourcesActivator.getFindReferencesService(CompositeResourcesActivator.java:187)
+	at com.tibco.amf.tools.composite.resources.CompositeResourcesActivator.start(CompositeResourcesActivator.java:141)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:771)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:764)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:721)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:936)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:319)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:571)
+	at org.eclipse.osgi.container.Module.start(Module.java:439)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:320)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:36)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:391)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:337)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at com.tibco.bw.core.design.resource.BWResourcePluginActivator$Implementation.<init>(BWResourcePluginActivator.java:148)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at java.lang.Class.newInstance(Class.java:383)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.loadBundleActivator(BundleContextImpl.java:755)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:706)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:936)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:319)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:571)
+	at org.eclipse.osgi.container.Module.start(Module.java:439)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:320)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:36)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:391)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:337)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Class.java:2595)
+	at java.lang.Class.getConstructor0(Class.java:2895)
+	at java.lang.Class.newInstance(Class.java:354)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.loadBundleActivator(BundleContextImpl.java:755)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:706)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:936)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:319)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:571)
+	at org.eclipse.osgi.container.Module.start(Module.java:439)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:320)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:337)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:568)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin$1.run(WorkbenchPlugin.java:294)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:52)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:289)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition$1.run(LightweightDecoratorDefinition.java:125)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:867)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.internalGetDecorator(LightweightDecoratorDefinition.java:120)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:255)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:83)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:367)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:349)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:372)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:332)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.tibco.xpd.fragments 4 0 2016-04-28 12:06:33.645
+!MESSAGE com.tibco.xpd.fragments.internal.FragmentsManager$5.run(FragmentsManager.java:787) FragmentsManager.initialize(): No root categories found!!!
+
+!ENTRY com.tibco.bw.core.design.process.editor 1 0 2016-04-28 12:06:34.578
+!MESSAGE ".com.tibco.bw.rad/BWApplication.launch" file is synchronized.
+
+!ENTRY com.tibco.bw.core.design.process.editor 1 0 2016-04-28 12:06:34.591
+!MESSAGE ".com.tibco.bw.rad/runtime.target" file is synchronized.
+
+!ENTRY org.eclipse.emf.validation 2 70 2016-04-28 12:07:07.568
+!MESSAGE Constraint "com.tibco.bw.sharedresource.trinity.ssl.editor.com.tibco.trinity.ssl.editor.invalid.remote.host.constraint" could not find target EMF type "SSLServerConfiguration."
+
+!ENTRY org.eclipse.bpel.validator 1 0 2016-04-28 12:07:07.808
+!MESSAGE Validator Startup 20ms
+
+!ENTRY org.eclipse.core.jobs 4 2 2016-04-28 12:12:11.405
+!MESSAGE An internal error occurred during: "Pulling Branch master - git".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jgit.lib.ObjectIdOwnerMap.get(ObjectIdOwnerMap.java:131)
+	at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:857)
+	at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:772)
+	at org.eclipse.jgit.api.RebaseCommand.call(RebaseCommand.java:294)
+	at org.eclipse.jgit.api.PullCommand.call(PullCommand.java:320)
+	at org.eclipse.egit.core.op.PullOperation$1.run(PullOperation.java:193)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.egit.core.op.PullOperation.execute(PullOperation.java:225)
+	at org.eclipse.egit.ui.internal.pull.PullOperationUI.execute(PullOperationUI.java:156)
+	at org.eclipse.egit.ui.internal.pull.PullOperationUI$1.runInWorkspace(PullOperationUI.java:131)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 2016-04-28 12:15:05.945 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -showlocation -keyring /Users/Ro/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -showlocation -keyring /Users/Ro/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.jgit.pgm 4 0 2016-04-28 12:15:07.633
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jgit.pgm [1148]
+  Bundle was not resolved because of a uses contraint violation.
+  org.osgi.service.resolver.ResolutionException: Uses constraint violation. Unable to resolve resource org.eclipse.jgit.pgm [osgi.identity; osgi.identity="org.eclipse.jgit.pgm"; type="osgi.bundle"; version:Version="4.3.0.201604071810-r"] because it is exposed to package 'javax.servlet' from resources javax.servlet [osgi.identity; osgi.identity="javax.servlet"; type="osgi.bundle"; version:Version="3.1.0.v20140303-1611"] and javax.servlet [osgi.identity; osgi.identity="javax.servlet"; type="osgi.bundle"; version:Version="3.0.0.v201112011016"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.jgit.pgm [osgi.identity; osgi.identity="org.eclipse.jgit.pgm"; type="osgi.bundle"; version:Version="4.3.0.201604071810-r"]
+    import: (&(osgi.wiring.package=javax.servlet)(&(version>=3.1.0)(!(version>=4.0.0))))
+     |
+    export: osgi.wiring.package: javax.servlet
+  javax.servlet [osgi.identity; osgi.identity="javax.servlet"; type="osgi.bundle"; version:Version="3.1.0.v20140303-1611"]
+
+Chain 2:
+  org.eclipse.jgit.pgm [osgi.identity; osgi.identity="org.eclipse.jgit.pgm"; type="osgi.bundle"; version:Version="4.3.0.201604071810-r"]
+    import: (&(osgi.wiring.package=org.eclipse.jetty.security)(&(version>=9.0.0)(!(version>=10.0.0))))
+     |
+    export: osgi.wiring.package=org.eclipse.jetty.security; uses:=javax.servlet
+  org.eclipse.jetty.security [osgi.identity; osgi.identity="org.eclipse.jetty.security"; type="osgi.bundle"; version:Version="9.2.2.v20140723"]
+    import: (&(osgi.wiring.package=javax.servlet)(&(version>=2.6.0)(!(version>=3.2.0))))
+     |
+    export: osgi.wiring.package: javax.servlet
+  javax.servlet [osgi.identity; osgi.identity="javax.servlet"; type="osgi.bundle"; version:Version="3.0.0.v201112011016"]
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 12:15:12.528
+!MESSAGE Both 'com.tibco.amf.sharedresource.model.transport.eclipse' and 'com.tibco.amf.sharedresource.model.transport.eclipse' register a package for 'http://xsd.tns.tibco.com/amf/models/sharedresource/httpconnector'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 12:15:12.533
+!MESSAGE Both 'com.tibco.bw.sharedresource.http.model' and 'com.tibco.bw.sharedresource.http.model' register a package for 'http://xsd.tns.tibco.com/bw/models/sharedresource/httpclient'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 12:15:12.533
+!MESSAGE Both 'com.tibco.amf.sharedresource.model.data.eclipse' and 'com.tibco.bw.sharedresource.jdbc.model' register a package for 'http://xsd.tns.tibco.com/amf/models/sharedresource/jdbc'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 12:15:12.534
+!MESSAGE Both 'com.tibco.amf.sca.model.eclipse' and 'com.tibco.bw.sharedresource.ws.policy.model' register a package for 'http://schemas.xmlsoap.org/ws/2004/09/policy'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 12:15:12.535
+!MESSAGE Both 'com.tibco.amf.wsdl.extensions.eclipse' and 'com.tibco.bw.wsdl.extensions' register a package for 'http://xsd.tns.tibco.com/wsdl/models/extensions/soap/tibcojms'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 12:15:12.535
+!MESSAGE Both 'com.tibco.amf.wsdl.extensions.eclipse' and 'com.tibco.bw.wsdl.extensions' register a package for 'http://xsd.tns.tibco.com/wsdl/models/soap12'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 12:15:12.548
+!MESSAGE Both 'com.tibco.bw.sharedresource.identity.model' and 'com.tibco.bw.sharedresource.ws.policy.model' register an extension parser for 'policy'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 12:15:12.548
+!MESSAGE Both 'com.tibco.bw.sharedresource.trinity.securityprovider.model' and 'com.tibco.trinity.securityprovider.model.eclipse' register an extension parser for 'auth'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 12:15:12.548
+!MESSAGE Both 'com.tibco.bw.sharedresource.trinity.securityprovider.model' and 'com.tibco.trinity.securityprovider.model.eclipse' register an extension parser for 'identity'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 12:15:12.548
+!MESSAGE Both 'com.tibco.bw.sharedresource.trinity.securityprovider.model' and 'com.tibco.trinity.securityprovider.model.eclipse' register an extension parser for 'userid'
+
+!ENTRY org.eclipse.ui 2 0 2016-04-28 12:15:13.034
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2016-04-28 12:15:13.035
+!MESSAGE Commands should really have a category: plug-in='com.tibco.amf.tools.migration2x.ui', id='com.tibco.amf.tools.migration2x.ui.migrateTo3xCommand', categoryId='com.tibco.amf.tools.composite.resources.ui.TasksCategory'
+!SUBENTRY 1 org.eclipse.ui 2 0 2016-04-28 12:15:13.035
+!MESSAGE Commands should really have a category: plug-in='com.tibco.amf.tools.packager.ui', id='com.tibco.amf.tools.packager.ui.createDaa.command', categoryId='tibco.category.soa_platform'
+!SUBENTRY 1 org.eclipse.ui 2 0 2016-04-28 12:15:13.035
+!MESSAGE Commands should really have a category: plug-in='com.tibco.bw.binding.soap.axis2.design', id='com.tibco.bw.binding.soap.axis2.design.generateWSDL', categoryId='tibco.category.soa_platform'
+
+!ENTRY org.eclipse.ui 2 0 2016-04-28 12:15:13.513
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2016-04-28 12:15:13.514
+!MESSAGE Commands should really have a category: plug-in='com.tibco.amf.tools.migration2x.ui', id='com.tibco.amf.tools.migration2x.ui.migrateTo3xCommand', categoryId='com.tibco.amf.tools.composite.resources.ui.TasksCategory'
+!SUBENTRY 1 org.eclipse.ui 2 0 2016-04-28 12:15:13.514
+!MESSAGE Commands should really have a category: plug-in='com.tibco.amf.tools.packager.ui', id='com.tibco.amf.tools.packager.ui.createDaa.command', categoryId='tibco.category.soa_platform'
+!SUBENTRY 1 org.eclipse.ui 2 0 2016-04-28 12:15:13.514
+!MESSAGE Commands should really have a category: plug-in='com.tibco.bw.binding.soap.axis2.design', id='com.tibco.bw.binding.soap.axis2.design.generateWSDL', categoryId='tibco.category.soa_platform'
+
+!ENTRY org.eclipse.core.net 1 0 2016-04-28 12:15:14.894
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface 2 0 2016-04-28 12:15:16.270
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-04-28 12:15:16.270
+!MESSAGE A conflict occurred for ALT+COMMAND+R:
+Binding(ALT+COMMAND+R,
+	ParameterizedCommand(Command(com.tibco.amf.svar.editor.svarRename.command,Rename & update references for SVar,
+		Rename selected Substitution Variable & update the references in the workspace,
+		Category(org.eclipse.core.commands.categories.autogenerated,Uncategorized,Commands that were either auto-generated or have no category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@50e927cf,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+COMMAND+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7b34b088,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+
+!ENTRY com.tibco.xpd.fragments 4 0 2016-04-28 12:15:22.268
+!MESSAGE com.tibco.xpd.fragments.internal.FragmentsManager$5.run(FragmentsManager.java:787) FragmentsManager.initialize(): No root categories found!!!
+
+!ENTRY org.eclipse.emf.validation 2 70 2016-04-28 12:15:58.192
+!MESSAGE Constraint "com.tibco.bw.sharedresource.trinity.ssl.editor.com.tibco.trinity.ssl.editor.invalid.remote.host.constraint" could not find target EMF type "SSLServerConfiguration."
+
+!ENTRY org.eclipse.bpel.validator 1 0 2016-04-28 12:15:58.513
+!MESSAGE Validator Startup 19ms
+!SESSION 2016-04-28 12:20:34.518 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -showlocation -keyring /Users/Ro/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -showlocation -keyring /Users/Ro/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.jgit.pgm 4 0 2016-04-28 12:20:36.164
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jgit.pgm [1148]
+  Bundle was not resolved because of a uses contraint violation.
+  org.osgi.service.resolver.ResolutionException: Uses constraint violation. Unable to resolve resource org.eclipse.jgit.pgm [osgi.identity; osgi.identity="org.eclipse.jgit.pgm"; type="osgi.bundle"; version:Version="4.3.0.201604071810-r"] because it is exposed to package 'javax.servlet' from resources javax.servlet [osgi.identity; osgi.identity="javax.servlet"; type="osgi.bundle"; version:Version="3.1.0.v20140303-1611"] and javax.servlet [osgi.identity; osgi.identity="javax.servlet"; type="osgi.bundle"; version:Version="3.0.0.v201112011016"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.jgit.pgm [osgi.identity; osgi.identity="org.eclipse.jgit.pgm"; type="osgi.bundle"; version:Version="4.3.0.201604071810-r"]
+    import: (&(osgi.wiring.package=javax.servlet)(&(version>=3.1.0)(!(version>=4.0.0))))
+     |
+    export: osgi.wiring.package: javax.servlet
+  javax.servlet [osgi.identity; osgi.identity="javax.servlet"; type="osgi.bundle"; version:Version="3.1.0.v20140303-1611"]
+
+Chain 2:
+  org.eclipse.jgit.pgm [osgi.identity; osgi.identity="org.eclipse.jgit.pgm"; type="osgi.bundle"; version:Version="4.3.0.201604071810-r"]
+    import: (&(osgi.wiring.package=org.eclipse.jetty.security)(&(version>=9.0.0)(!(version>=10.0.0))))
+     |
+    export: osgi.wiring.package=org.eclipse.jetty.security; uses:=javax.servlet
+  org.eclipse.jetty.security [osgi.identity; osgi.identity="org.eclipse.jetty.security"; type="osgi.bundle"; version:Version="9.2.2.v20140723"]
+    import: (&(osgi.wiring.package=javax.servlet)(&(version>=2.6.0)(!(version>=3.2.0))))
+     |
+    export: osgi.wiring.package: javax.servlet
+  javax.servlet [osgi.identity; osgi.identity="javax.servlet"; type="osgi.bundle"; version:Version="3.0.0.v201112011016"]
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 12:20:40.347
+!MESSAGE Both 'com.tibco.amf.sharedresource.model.transport.eclipse' and 'com.tibco.amf.sharedresource.model.transport.eclipse' register a package for 'http://xsd.tns.tibco.com/amf/models/sharedresource/httpconnector'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 12:20:40.351
+!MESSAGE Both 'com.tibco.bw.sharedresource.http.model' and 'com.tibco.bw.sharedresource.http.model' register a package for 'http://xsd.tns.tibco.com/bw/models/sharedresource/httpclient'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 12:20:40.352
+!MESSAGE Both 'com.tibco.amf.sharedresource.model.data.eclipse' and 'com.tibco.bw.sharedresource.jdbc.model' register a package for 'http://xsd.tns.tibco.com/amf/models/sharedresource/jdbc'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 12:20:40.354
+!MESSAGE Both 'com.tibco.amf.sca.model.eclipse' and 'com.tibco.bw.sharedresource.ws.policy.model' register a package for 'http://schemas.xmlsoap.org/ws/2004/09/policy'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 12:20:40.354
+!MESSAGE Both 'com.tibco.amf.wsdl.extensions.eclipse' and 'com.tibco.bw.wsdl.extensions' register a package for 'http://xsd.tns.tibco.com/wsdl/models/extensions/soap/tibcojms'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 12:20:40.354
+!MESSAGE Both 'com.tibco.amf.wsdl.extensions.eclipse' and 'com.tibco.bw.wsdl.extensions' register a package for 'http://xsd.tns.tibco.com/wsdl/models/soap12'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 12:20:40.365
+!MESSAGE Both 'com.tibco.bw.sharedresource.identity.model' and 'com.tibco.bw.sharedresource.ws.policy.model' register an extension parser for 'policy'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 12:20:40.365
+!MESSAGE Both 'com.tibco.bw.sharedresource.trinity.securityprovider.model' and 'com.tibco.trinity.securityprovider.model.eclipse' register an extension parser for 'auth'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 12:20:40.366
+!MESSAGE Both 'com.tibco.bw.sharedresource.trinity.securityprovider.model' and 'com.tibco.trinity.securityprovider.model.eclipse' register an extension parser for 'identity'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 12:20:40.366
+!MESSAGE Both 'com.tibco.bw.sharedresource.trinity.securityprovider.model' and 'com.tibco.trinity.securityprovider.model.eclipse' register an extension parser for 'userid'
+
+!ENTRY org.eclipse.ui 2 0 2016-04-28 12:20:40.858
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2016-04-28 12:20:40.858
+!MESSAGE Commands should really have a category: plug-in='com.tibco.amf.tools.migration2x.ui', id='com.tibco.amf.tools.migration2x.ui.migrateTo3xCommand', categoryId='com.tibco.amf.tools.composite.resources.ui.TasksCategory'
+!SUBENTRY 1 org.eclipse.ui 2 0 2016-04-28 12:20:40.858
+!MESSAGE Commands should really have a category: plug-in='com.tibco.amf.tools.packager.ui', id='com.tibco.amf.tools.packager.ui.createDaa.command', categoryId='tibco.category.soa_platform'
+!SUBENTRY 1 org.eclipse.ui 2 0 2016-04-28 12:20:40.858
+!MESSAGE Commands should really have a category: plug-in='com.tibco.bw.binding.soap.axis2.design', id='com.tibco.bw.binding.soap.axis2.design.generateWSDL', categoryId='tibco.category.soa_platform'
+
+!ENTRY org.eclipse.ui 2 0 2016-04-28 12:20:41.302
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2016-04-28 12:20:41.302
+!MESSAGE Commands should really have a category: plug-in='com.tibco.amf.tools.migration2x.ui', id='com.tibco.amf.tools.migration2x.ui.migrateTo3xCommand', categoryId='com.tibco.amf.tools.composite.resources.ui.TasksCategory'
+!SUBENTRY 1 org.eclipse.ui 2 0 2016-04-28 12:20:41.302
+!MESSAGE Commands should really have a category: plug-in='com.tibco.amf.tools.packager.ui', id='com.tibco.amf.tools.packager.ui.createDaa.command', categoryId='tibco.category.soa_platform'
+!SUBENTRY 1 org.eclipse.ui 2 0 2016-04-28 12:20:41.302
+!MESSAGE Commands should really have a category: plug-in='com.tibco.bw.binding.soap.axis2.design', id='com.tibco.bw.binding.soap.axis2.design.generateWSDL', categoryId='tibco.category.soa_platform'
+
+!ENTRY org.eclipse.core.net 1 0 2016-04-28 12:20:42.687
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface 2 0 2016-04-28 12:20:44.052
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-04-28 12:20:44.052
+!MESSAGE A conflict occurred for ALT+COMMAND+R:
+Binding(ALT+COMMAND+R,
+	ParameterizedCommand(Command(com.tibco.amf.svar.editor.svarRename.command,Rename & update references for SVar,
+		Rename selected Substitution Variable & update the references in the workspace,
+		Category(org.eclipse.core.commands.categories.autogenerated,Uncategorized,Commands that were either auto-generated or have no category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6920cd7,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+COMMAND+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5e88fa9f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+
+!ENTRY com.tibco.xpd.resources 4 0 2016-04-28 12:20:50.214
+!MESSAGE Failed to clear the dependencies for '/.com.tibco.bw.rad/NewBWApplication.launch'
+!STACK 0
+com.tibco.xpd.resources.internal.db.ResourceDbException: java.sql.SQLException: Page Page(12,Container(0, 161)) could not be read from disk.
+	at com.tibco.xpd.resources.internal.db.impl.derby.ResourceDbDerby.execute(ResourceDbDerby.java:930)
+	at com.tibco.xpd.resources.internal.db.impl.derby.ResourceDbDerby.update(ResourceDbDerby.java:957)
+	at com.tibco.xpd.resources.internal.indexer.ResourceDependencyIndexer.clearIndexer(ResourceDependencyIndexer.java:349)
+	at com.tibco.xpd.resources.internal.indexer.ResourceDependencyIndexer$_o.visit(ResourceDependencyIndexer.java:868)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:69)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:49)
+	at com.tibco.xpd.resources.internal.indexer.ResourceDependencyIndexer$1.resourceChanged(ResourceDependencyIndexer.java:843)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:378)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1498)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:831)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:769)
+	at com.tibco.bw.core.design.resource.util.BWProjectBuilder.deleteIFile(BWProjectBuilder.java:713)
+	at com.tibco.bw.core.design.project.wizard.BWProjectWizardHelper.synchronizeBWApplicationLaunchFile(BWProjectWizardHelper.java:468)
+	at com.tibco.bw.core.design.project.wizard.BWProjectWizardHelper.synchronizeBWRadProject(BWProjectWizardHelper.java:147)
+	at com.tibco.bw.core.design.project.PluginActivator.initiateProject(PluginActivator.java:167)
+	at com.tibco.bw.core.design.project.PluginActivator$1.run(PluginActivator.java:154)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3983)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+Caused by: java.sql.SQLException: Page Page(12,Container(0, 161)) could not be read from disk.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(SQLExceptionFactory40.java:95)
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Util.java:87)
+	at org.apache.derby.impl.jdbc.Util.seeNextException(Util.java:223)
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(TransactionResourceImpl.java:398)
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(TransactionResourceImpl.java:346)
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(EmbedConnection.java:2201)
+	at org.apache.derby.impl.jdbc.ConnectionChild.handleException(ConnectionChild.java:81)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.<init>(EmbedPreparedStatement.java:139)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement20.<init>(EmbedPreparedStatement20.java:82)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement30.<init>(EmbedPreparedStatement30.java:63)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement40.<init>(EmbedPreparedStatement40.java:40)
+	at org.apache.derby.jdbc.Driver40.newEmbedPreparedStatement(Driver40.java:105)
+	at org.apache.derby.impl.jdbc.EmbedConnection.prepareStatement(EmbedConnection.java:1542)
+	at org.apache.derby.impl.jdbc.EmbedConnection.prepareStatement(EmbedConnection.java:1370)
+	at com.tibco.xpd.resources.internal.db.impl.derby.ResourceDbDerby.execute(ResourceDbDerby.java:902)
+	... 46 more
+Caused by: java.sql.SQLException: Page Page(12,Container(0, 161)) could not be read from disk.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(SQLExceptionFactory.java:45)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(SQLExceptionFactory40.java:119)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(SQLExceptionFactory40.java:70)
+	... 60 more
+Caused by: java.sql.SQLException: Java exception: ': java.nio.channels.ClosedChannelException'.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(SQLExceptionFactory.java:45)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(SQLExceptionFactory40.java:119)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(SQLExceptionFactory40.java:70)
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Util.java:87)
+	at org.apache.derby.impl.jdbc.Util.javaException(Util.java:244)
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(TransactionResourceImpl.java:403)
+	... 58 more
+Caused by: java.nio.channels.ClosedChannelException
+	at sun.nio.ch.FileChannelImpl.ensureOpen(FileChannelImpl.java:99)
+	at sun.nio.ch.FileChannelImpl.read(FileChannelImpl.java:709)
+	at org.apache.derby.impl.store.raw.data.RAFContainer4.readFull(RAFContainer4.java:471)
+	at org.apache.derby.impl.store.raw.data.RAFContainer4.readPage0(RAFContainer4.java:242)
+	at org.apache.derby.impl.store.raw.data.RAFContainer4.readPage(RAFContainer4.java:212)
+	at org.apache.derby.impl.store.raw.data.CachedPage.readPage(CachedPage.java:671)
+	at org.apache.derby.impl.store.raw.data.CachedPage.setIdentity(CachedPage.java:190)
+	at org.apache.derby.impl.services.cache.ConcurrentCache.find(ConcurrentCache.java:295)
+	at org.apache.derby.impl.store.raw.data.FileContainer.getUserPage(FileContainer.java:2427)
+	at org.apache.derby.impl.store.raw.data.FileContainer.getPage(FileContainer.java:2477)
+	at org.apache.derby.impl.store.raw.data.BaseContainerHandle.getPage(BaseContainerHandle.java:319)
+	at org.apache.derby.impl.store.access.btree.ControlRow.get(ControlRow.java:833)
+	at org.apache.derby.impl.store.access.btree.ControlRow.get(ControlRow.java:820)
+	at org.apache.derby.impl.store.access.btree.BranchControlRow.getChildPageAtSlot(BranchControlRow.java:1423)
+	at org.apache.derby.impl.store.access.btree.BranchControlRow.search(BranchControlRow.java:284)
+	at org.apache.derby.impl.store.access.btree.BTreeScan.positionAtStartForForwardScan(BTreeScan.java:393)
+	at org.apache.derby.impl.store.access.btree.BTreeForwardScan.positionAtStartPosition(BTreeForwardScan.java:70)
+	at org.apache.derby.impl.store.access.btree.BTreeForwardScan.fetchRows(BTreeForwardScan.java:122)
+	at org.apache.derby.impl.store.access.btree.BTreeScan.fetchNext(BTreeScan.java:1658)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getDescriptorViaIndexMinion(DataDictionaryImpl.java:8436)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getDescriptorViaIndex(DataDictionaryImpl.java:8249)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getColumnDescriptorsScan(DataDictionaryImpl.java:2511)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getColumnDescriptorsScan(DataDictionaryImpl.java:2475)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.finishTableDescriptor(DataDictionaryImpl.java:2174)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getTableDescriptorIndex1Scan(DataDictionaryImpl.java:2043)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getUncachedTableDescriptor(DataDictionaryImpl.java:2059)
+	at org.apache.derby.impl.sql.catalog.NameTDCacheable.setIdentity(NameTDCacheable.java:110)
+	at org.apache.derby.impl.services.cache.ConcurrentCache.find(ConcurrentCache.java:295)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getTableDescriptor(DataDictionaryImpl.java:1990)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.faultInTabInfo(DataDictionaryImpl.java:8882)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getNonCoreTI(DataDictionaryImpl.java:8697)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getTriggerDescriptorsScan(DataDictionaryImpl.java:4530)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getTriggerDescriptors(DataDictionaryImpl.java:4507)
+	at org.apache.derby.iapi.sql.dictionary.TableDescriptor.getAllRelevantTriggers(TableDescriptor.java:690)
+	at org.apache.derby.impl.sql.compile.DeleteNode.getDeleteReadMap(DeleteNode.java:957)
+	at org.apache.derby.impl.sql.compile.DeleteNode.getReadMap(DeleteNode.java:716)
+	at org.apache.derby.impl.sql.compile.DeleteNode.bindStatement(DeleteNode.java:246)
+	at org.apache.derby.impl.sql.GenericStatement.prepMinion(GenericStatement.java:316)
+	at org.apache.derby.impl.sql.GenericStatement.prepare(GenericStatement.java:88)
+	at org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext.prepareInternalStatement(GenericLanguageConnectionContext.java:802)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.<init>(EmbedPreparedStatement.java:121)
+	... 53 more
+
+!ENTRY com.tibco.xpd.fragments 4 0 2016-04-28 12:20:52.698
+!MESSAGE com.tibco.xpd.fragments.internal.FragmentsManager$5.run(FragmentsManager.java:787) FragmentsManager.initialize(): No root categories found!!!
+!SESSION 2016-04-28 12:23:38.542 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -showlocation -keyring /Users/Ro/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -showlocation -keyring /Users/Ro/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.jgit.pgm 4 0 2016-04-28 12:23:40.178
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jgit.pgm [1148]
+  Bundle was not resolved because of a uses contraint violation.
+  org.osgi.service.resolver.ResolutionException: Uses constraint violation. Unable to resolve resource org.eclipse.jgit.pgm [osgi.identity; osgi.identity="org.eclipse.jgit.pgm"; type="osgi.bundle"; version:Version="4.3.0.201604071810-r"] because it is exposed to package 'javax.servlet' from resources javax.servlet [osgi.identity; osgi.identity="javax.servlet"; type="osgi.bundle"; version:Version="3.1.0.v20140303-1611"] and javax.servlet [osgi.identity; osgi.identity="javax.servlet"; type="osgi.bundle"; version:Version="3.0.0.v201112011016"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.jgit.pgm [osgi.identity; osgi.identity="org.eclipse.jgit.pgm"; type="osgi.bundle"; version:Version="4.3.0.201604071810-r"]
+    import: (&(osgi.wiring.package=javax.servlet)(&(version>=3.1.0)(!(version>=4.0.0))))
+     |
+    export: osgi.wiring.package: javax.servlet
+  javax.servlet [osgi.identity; osgi.identity="javax.servlet"; type="osgi.bundle"; version:Version="3.1.0.v20140303-1611"]
+
+Chain 2:
+  org.eclipse.jgit.pgm [osgi.identity; osgi.identity="org.eclipse.jgit.pgm"; type="osgi.bundle"; version:Version="4.3.0.201604071810-r"]
+    import: (&(osgi.wiring.package=org.eclipse.jetty.security)(&(version>=9.0.0)(!(version>=10.0.0))))
+     |
+    export: osgi.wiring.package=org.eclipse.jetty.security; uses:=javax.servlet
+  org.eclipse.jetty.security [osgi.identity; osgi.identity="org.eclipse.jetty.security"; type="osgi.bundle"; version:Version="9.2.2.v20140723"]
+    import: (&(osgi.wiring.package=javax.servlet)(&(version>=2.6.0)(!(version>=3.2.0))))
+     |
+    export: osgi.wiring.package: javax.servlet
+  javax.servlet [osgi.identity; osgi.identity="javax.servlet"; type="osgi.bundle"; version:Version="3.0.0.v201112011016"]
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 12:23:42.634
+!MESSAGE Both 'com.tibco.amf.sharedresource.model.transport.eclipse' and 'com.tibco.amf.sharedresource.model.transport.eclipse' register a package for 'http://xsd.tns.tibco.com/amf/models/sharedresource/httpconnector'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 12:23:42.638
+!MESSAGE Both 'com.tibco.bw.sharedresource.http.model' and 'com.tibco.bw.sharedresource.http.model' register a package for 'http://xsd.tns.tibco.com/bw/models/sharedresource/httpclient'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 12:23:42.638
+!MESSAGE Both 'com.tibco.amf.sharedresource.model.data.eclipse' and 'com.tibco.bw.sharedresource.jdbc.model' register a package for 'http://xsd.tns.tibco.com/amf/models/sharedresource/jdbc'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 12:23:42.639
+!MESSAGE Both 'com.tibco.amf.sca.model.eclipse' and 'com.tibco.bw.sharedresource.ws.policy.model' register a package for 'http://schemas.xmlsoap.org/ws/2004/09/policy'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 12:23:42.639
+!MESSAGE Both 'com.tibco.amf.wsdl.extensions.eclipse' and 'com.tibco.bw.wsdl.extensions' register a package for 'http://xsd.tns.tibco.com/wsdl/models/extensions/soap/tibcojms'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 12:23:42.640
+!MESSAGE Both 'com.tibco.amf.wsdl.extensions.eclipse' and 'com.tibco.bw.wsdl.extensions' register a package for 'http://xsd.tns.tibco.com/wsdl/models/soap12'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 12:23:42.650
+!MESSAGE Both 'com.tibco.bw.sharedresource.identity.model' and 'com.tibco.bw.sharedresource.ws.policy.model' register an extension parser for 'policy'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 12:23:42.650
+!MESSAGE Both 'com.tibco.bw.sharedresource.trinity.securityprovider.model' and 'com.tibco.trinity.securityprovider.model.eclipse' register an extension parser for 'auth'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 12:23:42.650
+!MESSAGE Both 'com.tibco.bw.sharedresource.trinity.securityprovider.model' and 'com.tibco.trinity.securityprovider.model.eclipse' register an extension parser for 'identity'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 12:23:42.650
+!MESSAGE Both 'com.tibco.bw.sharedresource.trinity.securityprovider.model' and 'com.tibco.trinity.securityprovider.model.eclipse' register an extension parser for 'userid'
+
+!ENTRY org.eclipse.ui 2 0 2016-04-28 12:23:43.146
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2016-04-28 12:23:43.146
+!MESSAGE Commands should really have a category: plug-in='com.tibco.amf.tools.migration2x.ui', id='com.tibco.amf.tools.migration2x.ui.migrateTo3xCommand', categoryId='com.tibco.amf.tools.composite.resources.ui.TasksCategory'
+!SUBENTRY 1 org.eclipse.ui 2 0 2016-04-28 12:23:43.146
+!MESSAGE Commands should really have a category: plug-in='com.tibco.amf.tools.packager.ui', id='com.tibco.amf.tools.packager.ui.createDaa.command', categoryId='tibco.category.soa_platform'
+!SUBENTRY 1 org.eclipse.ui 2 0 2016-04-28 12:23:43.146
+!MESSAGE Commands should really have a category: plug-in='com.tibco.bw.binding.soap.axis2.design', id='com.tibco.bw.binding.soap.axis2.design.generateWSDL', categoryId='tibco.category.soa_platform'
+
+!ENTRY org.eclipse.ui 2 0 2016-04-28 12:23:43.603
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2016-04-28 12:23:43.603
+!MESSAGE Commands should really have a category: plug-in='com.tibco.amf.tools.migration2x.ui', id='com.tibco.amf.tools.migration2x.ui.migrateTo3xCommand', categoryId='com.tibco.amf.tools.composite.resources.ui.TasksCategory'
+!SUBENTRY 1 org.eclipse.ui 2 0 2016-04-28 12:23:43.603
+!MESSAGE Commands should really have a category: plug-in='com.tibco.amf.tools.packager.ui', id='com.tibco.amf.tools.packager.ui.createDaa.command', categoryId='tibco.category.soa_platform'
+!SUBENTRY 1 org.eclipse.ui 2 0 2016-04-28 12:23:43.603
+!MESSAGE Commands should really have a category: plug-in='com.tibco.bw.binding.soap.axis2.design', id='com.tibco.bw.binding.soap.axis2.design.generateWSDL', categoryId='tibco.category.soa_platform'
+
+!ENTRY org.eclipse.core.net 1 0 2016-04-28 12:23:45.002
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface 2 0 2016-04-28 12:23:46.348
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-04-28 12:23:46.348
+!MESSAGE A conflict occurred for ALT+COMMAND+R:
+Binding(ALT+COMMAND+R,
+	ParameterizedCommand(Command(com.tibco.amf.svar.editor.svarRename.command,Rename & update references for SVar,
+		Rename selected Substitution Variable & update the references in the workspace,
+		Category(org.eclipse.core.commands.categories.autogenerated,Uncategorized,Commands that were either auto-generated or have no category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1a2ad329,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+COMMAND+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@718d362a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+
+!ENTRY com.tibco.xpd.fragments 4 0 2016-04-28 12:23:55.864
+!MESSAGE com.tibco.xpd.fragments.internal.FragmentsManager$5.run(FragmentsManager.java:787) FragmentsManager.initialize(): No root categories found!!!
+!SESSION 2016-04-28 12:25:20.088 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -showlocation -keyring /Users/Ro/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -showlocation -keyring /Users/Ro/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.jgit.pgm 4 0 2016-04-28 12:25:21.492
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jgit.pgm [1148]
+  Bundle was not resolved because of a uses contraint violation.
+  org.osgi.service.resolver.ResolutionException: Uses constraint violation. Unable to resolve resource org.eclipse.jgit.pgm [osgi.identity; osgi.identity="org.eclipse.jgit.pgm"; type="osgi.bundle"; version:Version="4.3.0.201604071810-r"] because it is exposed to package 'javax.servlet' from resources javax.servlet [osgi.identity; osgi.identity="javax.servlet"; type="osgi.bundle"; version:Version="3.1.0.v20140303-1611"] and javax.servlet [osgi.identity; osgi.identity="javax.servlet"; type="osgi.bundle"; version:Version="3.0.0.v201112011016"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.jgit.pgm [osgi.identity; osgi.identity="org.eclipse.jgit.pgm"; type="osgi.bundle"; version:Version="4.3.0.201604071810-r"]
+    import: (&(osgi.wiring.package=javax.servlet)(&(version>=3.1.0)(!(version>=4.0.0))))
+     |
+    export: osgi.wiring.package: javax.servlet
+  javax.servlet [osgi.identity; osgi.identity="javax.servlet"; type="osgi.bundle"; version:Version="3.1.0.v20140303-1611"]
+
+Chain 2:
+  org.eclipse.jgit.pgm [osgi.identity; osgi.identity="org.eclipse.jgit.pgm"; type="osgi.bundle"; version:Version="4.3.0.201604071810-r"]
+    import: (&(osgi.wiring.package=org.eclipse.jetty.security)(&(version>=9.0.0)(!(version>=10.0.0))))
+     |
+    export: osgi.wiring.package=org.eclipse.jetty.security; uses:=javax.servlet
+  org.eclipse.jetty.security [osgi.identity; osgi.identity="org.eclipse.jetty.security"; type="osgi.bundle"; version:Version="9.2.2.v20140723"]
+    import: (&(osgi.wiring.package=javax.servlet)(&(version>=2.6.0)(!(version>=3.2.0))))
+     |
+    export: osgi.wiring.package: javax.servlet
+  javax.servlet [osgi.identity; osgi.identity="javax.servlet"; type="osgi.bundle"; version:Version="3.0.0.v201112011016"]
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 12:25:25.282
+!MESSAGE Both 'com.tibco.amf.sharedresource.model.transport.eclipse' and 'com.tibco.amf.sharedresource.model.transport.eclipse' register a package for 'http://xsd.tns.tibco.com/amf/models/sharedresource/httpconnector'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 12:25:25.286
+!MESSAGE Both 'com.tibco.bw.sharedresource.http.model' and 'com.tibco.bw.sharedresource.http.model' register a package for 'http://xsd.tns.tibco.com/bw/models/sharedresource/httpclient'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 12:25:25.286
+!MESSAGE Both 'com.tibco.amf.sharedresource.model.data.eclipse' and 'com.tibco.bw.sharedresource.jdbc.model' register a package for 'http://xsd.tns.tibco.com/amf/models/sharedresource/jdbc'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 12:25:25.287
+!MESSAGE Both 'com.tibco.amf.sca.model.eclipse' and 'com.tibco.bw.sharedresource.ws.policy.model' register a package for 'http://schemas.xmlsoap.org/ws/2004/09/policy'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 12:25:25.288
+!MESSAGE Both 'com.tibco.amf.wsdl.extensions.eclipse' and 'com.tibco.bw.wsdl.extensions' register a package for 'http://xsd.tns.tibco.com/wsdl/models/extensions/soap/tibcojms'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 12:25:25.288
+!MESSAGE Both 'com.tibco.amf.wsdl.extensions.eclipse' and 'com.tibco.bw.wsdl.extensions' register a package for 'http://xsd.tns.tibco.com/wsdl/models/soap12'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 12:25:25.298
+!MESSAGE Both 'com.tibco.bw.sharedresource.identity.model' and 'com.tibco.bw.sharedresource.ws.policy.model' register an extension parser for 'policy'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 12:25:25.298
+!MESSAGE Both 'com.tibco.bw.sharedresource.trinity.securityprovider.model' and 'com.tibco.trinity.securityprovider.model.eclipse' register an extension parser for 'auth'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 12:25:25.298
+!MESSAGE Both 'com.tibco.bw.sharedresource.trinity.securityprovider.model' and 'com.tibco.trinity.securityprovider.model.eclipse' register an extension parser for 'identity'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 12:25:25.298
+!MESSAGE Both 'com.tibco.bw.sharedresource.trinity.securityprovider.model' and 'com.tibco.trinity.securityprovider.model.eclipse' register an extension parser for 'userid'
+
+!ENTRY org.eclipse.ui 2 0 2016-04-28 12:25:25.778
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2016-04-28 12:25:25.778
+!MESSAGE Commands should really have a category: plug-in='com.tibco.amf.tools.migration2x.ui', id='com.tibco.amf.tools.migration2x.ui.migrateTo3xCommand', categoryId='com.tibco.amf.tools.composite.resources.ui.TasksCategory'
+!SUBENTRY 1 org.eclipse.ui 2 0 2016-04-28 12:25:25.778
+!MESSAGE Commands should really have a category: plug-in='com.tibco.amf.tools.packager.ui', id='com.tibco.amf.tools.packager.ui.createDaa.command', categoryId='tibco.category.soa_platform'
+!SUBENTRY 1 org.eclipse.ui 2 0 2016-04-28 12:25:25.778
+!MESSAGE Commands should really have a category: plug-in='com.tibco.bw.binding.soap.axis2.design', id='com.tibco.bw.binding.soap.axis2.design.generateWSDL', categoryId='tibco.category.soa_platform'
+
+!ENTRY org.eclipse.ui 2 0 2016-04-28 12:25:26.222
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2016-04-28 12:25:26.222
+!MESSAGE Commands should really have a category: plug-in='com.tibco.amf.tools.migration2x.ui', id='com.tibco.amf.tools.migration2x.ui.migrateTo3xCommand', categoryId='com.tibco.amf.tools.composite.resources.ui.TasksCategory'
+!SUBENTRY 1 org.eclipse.ui 2 0 2016-04-28 12:25:26.222
+!MESSAGE Commands should really have a category: plug-in='com.tibco.amf.tools.packager.ui', id='com.tibco.amf.tools.packager.ui.createDaa.command', categoryId='tibco.category.soa_platform'
+!SUBENTRY 1 org.eclipse.ui 2 0 2016-04-28 12:25:26.222
+!MESSAGE Commands should really have a category: plug-in='com.tibco.bw.binding.soap.axis2.design', id='com.tibco.bw.binding.soap.axis2.design.generateWSDL', categoryId='tibco.category.soa_platform'
+
+!ENTRY org.eclipse.core.net 1 0 2016-04-28 12:25:27.605
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface 2 0 2016-04-28 12:25:28.964
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-04-28 12:25:28.964
+!MESSAGE A conflict occurred for ALT+COMMAND+R:
+Binding(ALT+COMMAND+R,
+	ParameterizedCommand(Command(com.tibco.amf.svar.editor.svarRename.command,Rename & update references for SVar,
+		Rename selected Substitution Variable & update the references in the workspace,
+		Category(org.eclipse.core.commands.categories.autogenerated,Uncategorized,Commands that were either auto-generated or have no category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@62565981,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+COMMAND+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@130e5697,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+
+!ENTRY com.tibco.xpd.fragments 4 0 2016-04-28 12:25:38.537
+!MESSAGE com.tibco.xpd.fragments.internal.FragmentsManager$5.run(FragmentsManager.java:787) FragmentsManager.initialize(): No root categories found!!!
+!SESSION 2016-04-28 12:28:01.577 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -showlocation -keyring /Users/Ro/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -showlocation -keyring /Users/Ro/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.jgit.pgm 4 0 2016-04-28 12:28:03.206
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jgit.pgm [1148]
+  Bundle was not resolved because of a uses contraint violation.
+  org.osgi.service.resolver.ResolutionException: Uses constraint violation. Unable to resolve resource org.eclipse.jgit.pgm [osgi.identity; osgi.identity="org.eclipse.jgit.pgm"; type="osgi.bundle"; version:Version="4.3.0.201604071810-r"] because it is exposed to package 'javax.servlet' from resources javax.servlet [osgi.identity; osgi.identity="javax.servlet"; type="osgi.bundle"; version:Version="3.1.0.v20140303-1611"] and javax.servlet [osgi.identity; osgi.identity="javax.servlet"; type="osgi.bundle"; version:Version="3.0.0.v201112011016"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.jgit.pgm [osgi.identity; osgi.identity="org.eclipse.jgit.pgm"; type="osgi.bundle"; version:Version="4.3.0.201604071810-r"]
+    import: (&(osgi.wiring.package=javax.servlet)(&(version>=3.1.0)(!(version>=4.0.0))))
+     |
+    export: osgi.wiring.package: javax.servlet
+  javax.servlet [osgi.identity; osgi.identity="javax.servlet"; type="osgi.bundle"; version:Version="3.1.0.v20140303-1611"]
+
+Chain 2:
+  org.eclipse.jgit.pgm [osgi.identity; osgi.identity="org.eclipse.jgit.pgm"; type="osgi.bundle"; version:Version="4.3.0.201604071810-r"]
+    import: (&(osgi.wiring.package=org.eclipse.jetty.security)(&(version>=9.0.0)(!(version>=10.0.0))))
+     |
+    export: osgi.wiring.package=org.eclipse.jetty.security; uses:=javax.servlet
+  org.eclipse.jetty.security [osgi.identity; osgi.identity="org.eclipse.jetty.security"; type="osgi.bundle"; version:Version="9.2.2.v20140723"]
+    import: (&(osgi.wiring.package=javax.servlet)(&(version>=2.6.0)(!(version>=3.2.0))))
+     |
+    export: osgi.wiring.package: javax.servlet
+  javax.servlet [osgi.identity; osgi.identity="javax.servlet"; type="osgi.bundle"; version:Version="3.0.0.v201112011016"]
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 12:28:06.212
+!MESSAGE Both 'com.tibco.amf.sharedresource.model.transport.eclipse' and 'com.tibco.amf.sharedresource.model.transport.eclipse' register a package for 'http://xsd.tns.tibco.com/amf/models/sharedresource/httpconnector'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 12:28:06.215
+!MESSAGE Both 'com.tibco.bw.sharedresource.http.model' and 'com.tibco.bw.sharedresource.http.model' register a package for 'http://xsd.tns.tibco.com/bw/models/sharedresource/httpclient'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 12:28:06.216
+!MESSAGE Both 'com.tibco.amf.sharedresource.model.data.eclipse' and 'com.tibco.bw.sharedresource.jdbc.model' register a package for 'http://xsd.tns.tibco.com/amf/models/sharedresource/jdbc'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 12:28:06.217
+!MESSAGE Both 'com.tibco.amf.sca.model.eclipse' and 'com.tibco.bw.sharedresource.ws.policy.model' register a package for 'http://schemas.xmlsoap.org/ws/2004/09/policy'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 12:28:06.217
+!MESSAGE Both 'com.tibco.amf.wsdl.extensions.eclipse' and 'com.tibco.bw.wsdl.extensions' register a package for 'http://xsd.tns.tibco.com/wsdl/models/extensions/soap/tibcojms'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 12:28:06.217
+!MESSAGE Both 'com.tibco.amf.wsdl.extensions.eclipse' and 'com.tibco.bw.wsdl.extensions' register a package for 'http://xsd.tns.tibco.com/wsdl/models/soap12'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 12:28:06.226
+!MESSAGE Both 'com.tibco.bw.sharedresource.identity.model' and 'com.tibco.bw.sharedresource.ws.policy.model' register an extension parser for 'policy'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 12:28:06.226
+!MESSAGE Both 'com.tibco.bw.sharedresource.trinity.securityprovider.model' and 'com.tibco.trinity.securityprovider.model.eclipse' register an extension parser for 'auth'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 12:28:06.226
+!MESSAGE Both 'com.tibco.bw.sharedresource.trinity.securityprovider.model' and 'com.tibco.trinity.securityprovider.model.eclipse' register an extension parser for 'identity'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 12:28:06.227
+!MESSAGE Both 'com.tibco.bw.sharedresource.trinity.securityprovider.model' and 'com.tibco.trinity.securityprovider.model.eclipse' register an extension parser for 'userid'
+
+!ENTRY org.eclipse.ui 2 0 2016-04-28 12:28:06.721
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2016-04-28 12:28:06.721
+!MESSAGE Commands should really have a category: plug-in='com.tibco.amf.tools.migration2x.ui', id='com.tibco.amf.tools.migration2x.ui.migrateTo3xCommand', categoryId='com.tibco.amf.tools.composite.resources.ui.TasksCategory'
+!SUBENTRY 1 org.eclipse.ui 2 0 2016-04-28 12:28:06.721
+!MESSAGE Commands should really have a category: plug-in='com.tibco.amf.tools.packager.ui', id='com.tibco.amf.tools.packager.ui.createDaa.command', categoryId='tibco.category.soa_platform'
+!SUBENTRY 1 org.eclipse.ui 2 0 2016-04-28 12:28:06.721
+!MESSAGE Commands should really have a category: plug-in='com.tibco.bw.binding.soap.axis2.design', id='com.tibco.bw.binding.soap.axis2.design.generateWSDL', categoryId='tibco.category.soa_platform'
+
+!ENTRY org.eclipse.ui 2 0 2016-04-28 12:28:07.163
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2016-04-28 12:28:07.163
+!MESSAGE Commands should really have a category: plug-in='com.tibco.amf.tools.migration2x.ui', id='com.tibco.amf.tools.migration2x.ui.migrateTo3xCommand', categoryId='com.tibco.amf.tools.composite.resources.ui.TasksCategory'
+!SUBENTRY 1 org.eclipse.ui 2 0 2016-04-28 12:28:07.163
+!MESSAGE Commands should really have a category: plug-in='com.tibco.amf.tools.packager.ui', id='com.tibco.amf.tools.packager.ui.createDaa.command', categoryId='tibco.category.soa_platform'
+!SUBENTRY 1 org.eclipse.ui 2 0 2016-04-28 12:28:07.163
+!MESSAGE Commands should really have a category: plug-in='com.tibco.bw.binding.soap.axis2.design', id='com.tibco.bw.binding.soap.axis2.design.generateWSDL', categoryId='tibco.category.soa_platform'
+
+!ENTRY org.eclipse.core.net 1 0 2016-04-28 12:28:08.533
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface 2 0 2016-04-28 12:28:09.893
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-04-28 12:28:09.893
+!MESSAGE A conflict occurred for ALT+COMMAND+R:
+Binding(ALT+COMMAND+R,
+	ParameterizedCommand(Command(com.tibco.amf.svar.editor.svarRename.command,Rename & update references for SVar,
+		Rename selected Substitution Variable & update the references in the workspace,
+		Category(org.eclipse.core.commands.categories.autogenerated,Uncategorized,Commands that were either auto-generated or have no category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6d0352b3,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+COMMAND+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@752a9dae,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+
+!ENTRY com.tibco.xpd.fragments 4 0 2016-04-28 12:28:14.676
+!MESSAGE com.tibco.xpd.fragments.internal.FragmentsManager$5.run(FragmentsManager.java:787) FragmentsManager.initialize(): No root categories found!!!
+
+!ENTRY org.eclipse.emf.validation 2 70 2016-04-28 12:28:43.948
+!MESSAGE Constraint "com.tibco.bw.sharedresource.trinity.ssl.editor.com.tibco.trinity.ssl.editor.invalid.remote.host.constraint" could not find target EMF type "SSLServerConfiguration."
+
+!ENTRY org.eclipse.bpel.validator 1 0 2016-04-28 12:28:44.264
+!MESSAGE Validator Startup 20ms
+
+!ENTRY org.eclipse.egit.core 4 0 2016-04-28 12:39:49.116
+!MESSAGE An exception occurred during push on URI https://github.com/rasclad/cloudprojects.git: Nothing to push.
+!STACK 0
+org.eclipse.jgit.errors.TransportException: Nothing to push.
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1238)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:189)
+	at org.eclipse.egit.ui.internal.push.PushOperationUI.execute(PushOperationUI.java:167)
+	at org.eclipse.egit.ui.internal.push.SimpleConfigurePushDialog$17.run(SimpleConfigurePushDialog.java:588)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.egit.core 4 0 2016-04-28 12:40:00.075
+!MESSAGE An exception occurred during push on URI https://github.com/rasclad/cloudprojects.git: An internal Exception occurred during push: Source ref refs/heads/master doesn't resolve to any object.
+!STACK 0
+org.eclipse.jgit.api.errors.JGitInternalException: Exception caught during execution of push command
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:182)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:217)
+	at org.eclipse.egit.ui.internal.push.PushOperationUI.execute(PushOperationUI.java:167)
+	at org.eclipse.egit.ui.internal.push.PushOperationUI$1.run(PushOperationUI.java:229)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.io.IOException: Source ref refs/heads/master doesn't resolve to any object.
+	at org.eclipse.jgit.transport.RemoteRefUpdate.<init>(RemoteRefUpdate.java:288)
+	at org.eclipse.jgit.transport.RemoteRefUpdate.<init>(RemoteRefUpdate.java:192)
+	at org.eclipse.jgit.transport.Transport.findRemoteRefUpdatesFor(Transport.java:655)
+	at org.eclipse.jgit.transport.Transport.findRemoteRefUpdatesFor(Transport.java:1319)
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:153)
+	... 4 more
+
+!ENTRY org.eclipse.ui 4 0 2016-04-28 12:45:44.697
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IllegalArgumentException: Invalid refspec /
+	at org.eclipse.jgit.transport.RefSpec.checkValid(RefSpec.java:446)
+	at org.eclipse.jgit.transport.RefSpec.setDestination(RefSpec.java:264)
+	at org.eclipse.egit.ui.internal.push.RefSpecDialog$4.modifyText(RefSpecDialog.java:201)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:179)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4188)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1467)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1490)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1475)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1279)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4031)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3658)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:832)
+	at org.eclipse.jface.window.Window.open(Window.java:808)
+	at org.eclipse.egit.ui.internal.push.SimpleConfigurePushDialog$10.widgetSelected(SimpleConfigurePushDialog.java:404)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:248)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4188)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1467)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1490)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1475)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1279)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4031)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3658)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:832)
+	at org.eclipse.jface.window.Window.open(Window.java:808)
+	at org.eclipse.egit.ui.internal.repository.tree.command.ConfigureRemoteCommand.execute(ConfigureRemoteCommand.java:38)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:294)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:247)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:229)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:149)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:499)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.executeItem(HandledContributionItem.java:825)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.handleWidgetSelection(HandledContributionItem.java:701)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.access$6(HandledContributionItem.java:685)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem$4.handleEvent(HandledContributionItem.java:613)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4188)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1467)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1490)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1475)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1279)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4031)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.egit.ui 4 0 2016-04-28 12:45:52.929
+!MESSAGE Unable to read object AnyObjectId[8b19bf7b44e9b52c801c83d90ed16657d9300925] for content proposal assistance
+!STACK 0
+org.eclipse.jgit.errors.MissingObjectException: Missing unknown 8b19bf7b44e9b52c801c83d90ed16657d9300925
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:145)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:226)
+	at org.eclipse.egit.ui.internal.components.RefContentProposal.getDescription(RefContentProposal.java:126)
+	at org.eclipse.jface.fieldassist.ContentProposalAdapter$ContentProposalPopup$4$1.run(ContentProposalAdapter.java:966)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3983)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:832)
+	at org.eclipse.jface.window.Window.open(Window.java:808)
+	at org.eclipse.egit.ui.internal.push.SimpleConfigurePushDialog$10.widgetSelected(SimpleConfigurePushDialog.java:404)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:248)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4188)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1467)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1490)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1475)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1279)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4031)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3658)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:832)
+	at org.eclipse.jface.window.Window.open(Window.java:808)
+	at org.eclipse.egit.ui.internal.repository.tree.command.ConfigureRemoteCommand.execute(ConfigureRemoteCommand.java:38)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:294)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:247)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:229)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:149)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:499)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.executeItem(HandledContributionItem.java:825)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.handleWidgetSelection(HandledContributionItem.java:701)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.access$6(HandledContributionItem.java:685)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem$4.handleEvent(HandledContributionItem.java:613)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4188)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1467)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1490)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1475)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1279)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4031)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.egit.ui 4 0 2016-04-28 12:45:54.750
+!MESSAGE Unable to read object AnyObjectId[c3c142c4158ffe9f4407237005ad704e75631de3] for content proposal assistance
+!STACK 0
+org.eclipse.jgit.errors.MissingObjectException: Missing unknown c3c142c4158ffe9f4407237005ad704e75631de3
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:145)
+	at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:226)
+	at org.eclipse.egit.ui.internal.components.RefContentProposal.getDescription(RefContentProposal.java:126)
+	at org.eclipse.jface.fieldassist.ContentProposalAdapter$ContentProposalPopup$4$1.run(ContentProposalAdapter.java:966)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3983)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:832)
+	at org.eclipse.jface.window.Window.open(Window.java:808)
+	at org.eclipse.egit.ui.internal.push.SimpleConfigurePushDialog$10.widgetSelected(SimpleConfigurePushDialog.java:404)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:248)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4188)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1467)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1490)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1475)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1279)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4031)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3658)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:832)
+	at org.eclipse.jface.window.Window.open(Window.java:808)
+	at org.eclipse.egit.ui.internal.repository.tree.command.ConfigureRemoteCommand.execute(ConfigureRemoteCommand.java:38)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:294)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:247)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:229)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:149)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:499)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.executeItem(HandledContributionItem.java:825)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.handleWidgetSelection(HandledContributionItem.java:701)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.access$6(HandledContributionItem.java:685)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem$4.handleEvent(HandledContributionItem.java:613)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4188)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1467)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1490)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1475)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1279)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4031)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.egit.core 4 0 2016-04-28 12:46:06.583
+!MESSAGE An exception occurred during push on URI https://github.com/rasclad/cloudprojects.git: An internal Exception occurred during push: Source ref HEAD doesn't resolve to any object.
+!STACK 0
+org.eclipse.jgit.api.errors.JGitInternalException: Exception caught during execution of push command
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:182)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:217)
+	at org.eclipse.egit.ui.internal.push.PushOperationUI.execute(PushOperationUI.java:167)
+	at org.eclipse.egit.ui.internal.push.PushOperationUI$1.run(PushOperationUI.java:229)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.io.IOException: Source ref HEAD doesn't resolve to any object.
+	at org.eclipse.jgit.transport.RemoteRefUpdate.<init>(RemoteRefUpdate.java:288)
+	at org.eclipse.jgit.transport.RemoteRefUpdate.<init>(RemoteRefUpdate.java:192)
+	at org.eclipse.jgit.transport.Transport.findRemoteRefUpdatesFor(Transport.java:655)
+	at org.eclipse.jgit.transport.Transport.findRemoteRefUpdatesFor(Transport.java:1319)
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:153)
+	... 4 more
+
+!ENTRY org.eclipse.egit.core 4 0 2016-04-28 12:46:29.764
+!MESSAGE An exception occurred during push on URI https://github.com/rasclad/cloudprojects.git: An internal Exception occurred during push: Source ref HEAD doesn't resolve to any object.
+!STACK 0
+org.eclipse.jgit.api.errors.JGitInternalException: Exception caught during execution of push command
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:182)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:217)
+	at org.eclipse.egit.ui.internal.push.PushOperationUI.execute(PushOperationUI.java:167)
+	at org.eclipse.egit.ui.internal.push.PushOperationUI$1.run(PushOperationUI.java:229)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.io.IOException: Source ref HEAD doesn't resolve to any object.
+	at org.eclipse.jgit.transport.RemoteRefUpdate.<init>(RemoteRefUpdate.java:288)
+	at org.eclipse.jgit.transport.RemoteRefUpdate.<init>(RemoteRefUpdate.java:192)
+	at org.eclipse.jgit.transport.Transport.findRemoteRefUpdatesFor(Transport.java:655)
+	at org.eclipse.jgit.transport.Transport.findRemoteRefUpdatesFor(Transport.java:1319)
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:153)
+	... 4 more
+!SESSION 2016-04-28 13:12:19.026 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -showlocation -keyring /Users/Ro/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -showlocation -keyring /Users/Ro/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.jgit.pgm 4 0 2016-04-28 13:12:20.716
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jgit.pgm [1148]
+  Bundle was not resolved because of a uses contraint violation.
+  org.osgi.service.resolver.ResolutionException: Uses constraint violation. Unable to resolve resource org.eclipse.jgit.pgm [osgi.identity; osgi.identity="org.eclipse.jgit.pgm"; type="osgi.bundle"; version:Version="4.3.0.201604071810-r"] because it is exposed to package 'javax.servlet' from resources javax.servlet [osgi.identity; osgi.identity="javax.servlet"; type="osgi.bundle"; version:Version="3.1.0.v20140303-1611"] and javax.servlet [osgi.identity; osgi.identity="javax.servlet"; type="osgi.bundle"; version:Version="3.0.0.v201112011016"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.jgit.pgm [osgi.identity; osgi.identity="org.eclipse.jgit.pgm"; type="osgi.bundle"; version:Version="4.3.0.201604071810-r"]
+    import: (&(osgi.wiring.package=javax.servlet)(&(version>=3.1.0)(!(version>=4.0.0))))
+     |
+    export: osgi.wiring.package: javax.servlet
+  javax.servlet [osgi.identity; osgi.identity="javax.servlet"; type="osgi.bundle"; version:Version="3.1.0.v20140303-1611"]
+
+Chain 2:
+  org.eclipse.jgit.pgm [osgi.identity; osgi.identity="org.eclipse.jgit.pgm"; type="osgi.bundle"; version:Version="4.3.0.201604071810-r"]
+    import: (&(osgi.wiring.package=org.eclipse.jetty.security)(&(version>=9.0.0)(!(version>=10.0.0))))
+     |
+    export: osgi.wiring.package=org.eclipse.jetty.security; uses:=javax.servlet
+  org.eclipse.jetty.security [osgi.identity; osgi.identity="org.eclipse.jetty.security"; type="osgi.bundle"; version:Version="9.2.2.v20140723"]
+    import: (&(osgi.wiring.package=javax.servlet)(&(version>=2.6.0)(!(version>=3.2.0))))
+     |
+    export: osgi.wiring.package: javax.servlet
+  javax.servlet [osgi.identity; osgi.identity="javax.servlet"; type="osgi.bundle"; version:Version="3.0.0.v201112011016"]
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 13:15:10.313
+!MESSAGE Both 'com.tibco.amf.sharedresource.model.transport.eclipse' and 'com.tibco.amf.sharedresource.model.transport.eclipse' register a package for 'http://xsd.tns.tibco.com/amf/models/sharedresource/httpconnector'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 13:15:10.318
+!MESSAGE Both 'com.tibco.bw.sharedresource.http.model' and 'com.tibco.bw.sharedresource.http.model' register a package for 'http://xsd.tns.tibco.com/bw/models/sharedresource/httpclient'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 13:15:10.318
+!MESSAGE Both 'com.tibco.amf.sharedresource.model.data.eclipse' and 'com.tibco.bw.sharedresource.jdbc.model' register a package for 'http://xsd.tns.tibco.com/amf/models/sharedresource/jdbc'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 13:15:10.319
+!MESSAGE Both 'com.tibco.amf.sca.model.eclipse' and 'com.tibco.bw.sharedresource.ws.policy.model' register a package for 'http://schemas.xmlsoap.org/ws/2004/09/policy'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 13:15:10.319
+!MESSAGE Both 'com.tibco.amf.wsdl.extensions.eclipse' and 'com.tibco.bw.wsdl.extensions' register a package for 'http://xsd.tns.tibco.com/wsdl/models/extensions/soap/tibcojms'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 13:15:10.320
+!MESSAGE Both 'com.tibco.amf.wsdl.extensions.eclipse' and 'com.tibco.bw.wsdl.extensions' register a package for 'http://xsd.tns.tibco.com/wsdl/models/soap12'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 13:15:10.328
+!MESSAGE Both 'com.tibco.bw.sharedresource.identity.model' and 'com.tibco.bw.sharedresource.ws.policy.model' register an extension parser for 'policy'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 13:15:10.329
+!MESSAGE Both 'com.tibco.bw.sharedresource.trinity.securityprovider.model' and 'com.tibco.trinity.securityprovider.model.eclipse' register an extension parser for 'auth'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 13:15:10.329
+!MESSAGE Both 'com.tibco.bw.sharedresource.trinity.securityprovider.model' and 'com.tibco.trinity.securityprovider.model.eclipse' register an extension parser for 'identity'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-28 13:15:10.329
+!MESSAGE Both 'com.tibco.bw.sharedresource.trinity.securityprovider.model' and 'com.tibco.trinity.securityprovider.model.eclipse' register an extension parser for 'userid'
+
+!ENTRY org.eclipse.ui 2 0 2016-04-28 13:15:10.840
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2016-04-28 13:15:10.840
+!MESSAGE Commands should really have a category: plug-in='com.tibco.amf.tools.migration2x.ui', id='com.tibco.amf.tools.migration2x.ui.migrateTo3xCommand', categoryId='com.tibco.amf.tools.composite.resources.ui.TasksCategory'
+!SUBENTRY 1 org.eclipse.ui 2 0 2016-04-28 13:15:10.840
+!MESSAGE Commands should really have a category: plug-in='com.tibco.amf.tools.packager.ui', id='com.tibco.amf.tools.packager.ui.createDaa.command', categoryId='tibco.category.soa_platform'
+!SUBENTRY 1 org.eclipse.ui 2 0 2016-04-28 13:15:10.840
+!MESSAGE Commands should really have a category: plug-in='com.tibco.bw.binding.soap.axis2.design', id='com.tibco.bw.binding.soap.axis2.design.generateWSDL', categoryId='tibco.category.soa_platform'
+
+!ENTRY org.eclipse.ui 2 0 2016-04-28 13:15:11.305
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2016-04-28 13:15:11.305
+!MESSAGE Commands should really have a category: plug-in='com.tibco.amf.tools.migration2x.ui', id='com.tibco.amf.tools.migration2x.ui.migrateTo3xCommand', categoryId='com.tibco.amf.tools.composite.resources.ui.TasksCategory'
+!SUBENTRY 1 org.eclipse.ui 2 0 2016-04-28 13:15:11.305
+!MESSAGE Commands should really have a category: plug-in='com.tibco.amf.tools.packager.ui', id='com.tibco.amf.tools.packager.ui.createDaa.command', categoryId='tibco.category.soa_platform'
+!SUBENTRY 1 org.eclipse.ui 2 0 2016-04-28 13:15:11.305
+!MESSAGE Commands should really have a category: plug-in='com.tibco.bw.binding.soap.axis2.design', id='com.tibco.bw.binding.soap.axis2.design.generateWSDL', categoryId='tibco.category.soa_platform'
+
+!ENTRY org.eclipse.core.net 1 0 2016-04-28 13:15:12.656
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface 2 0 2016-04-28 13:15:14.043
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-04-28 13:15:14.043
+!MESSAGE A conflict occurred for ALT+COMMAND+R:
+Binding(ALT+COMMAND+R,
+	ParameterizedCommand(Command(com.tibco.amf.svar.editor.svarRename.command,Rename & update references for SVar,
+		Rename selected Substitution Variable & update the references in the workspace,
+		Category(org.eclipse.core.commands.categories.autogenerated,Uncategorized,Commands that were either auto-generated or have no category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4456d453,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+COMMAND+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@208db832,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+
+!ENTRY com.tibco.xpd.fragments 4 0 2016-04-28 13:15:19.638
+!MESSAGE com.tibco.xpd.fragments.internal.FragmentsManager$5.run(FragmentsManager.java:787) FragmentsManager.initialize(): No root categories found!!!
+
+!ENTRY org.eclipse.egit.core 4 0 2016-04-28 13:15:20.003
+!MESSAGE Remove repository mapping of Git mapped resource for which project or mapped git repository has disappeared: 'RepositoryMapping[<empty> -> '../.git', absolute path: '/Users/Ro/CloudworkspaceDemo/.git' ]'
+!STACK 0
+java.io.FileNotFoundException: 
+	at org.eclipse.egit.core.project.GitProjectData.logAndUnmapGoneMappedResource(GitProjectData.java:701)
+	at org.eclipse.egit.core.project.GitProjectData.map(GitProjectData.java:667)
+	at org.eclipse.egit.core.project.GitProjectData.remapAll(GitProjectData.java:635)
+	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:628)
+	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:217)
+	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:103)
+	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:359)
+	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:375)
+	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:315)
+	at org.eclipse.egit.core.Activator$IgnoreDerivedResources$1.visit(Activator.java:638)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:69)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:49)
+	at org.eclipse.egit.core.Activator$IgnoreDerivedResources.resourceChanged(Activator.java:622)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:378)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1498)
+	at org.eclipse.core.internal.resources.File.create(File.java:175)
+	at org.eclipse.core.internal.resources.File.create(File.java:188)
+	at com.tibco.bw.core.design.resource.util.BWProjectBuilder.writeFile(BWProjectBuilder.java:692)
+	at com.tibco.bw.core.design.project.wizard.BWProjectWizardHelper.createNewLocalBWAppLaunchFile(BWProjectWizardHelper.java:519)
+	at com.tibco.bw.core.design.project.wizard.BWProjectWizardHelper.synchronizeBWApplicationLaunchFile(BWProjectWizardHelper.java:459)
+	at com.tibco.bw.core.design.project.wizard.BWProjectWizardHelper.synchronizeBWRadProject(BWProjectWizardHelper.java:147)
+	at com.tibco.bw.core.design.project.PluginActivator.initiateProject(PluginActivator.java:167)
+	at com.tibco.bw.core.design.project.PluginActivator$1.run(PluginActivator.java:154)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3983)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.emf.validation 2 70 2016-04-28 13:16:14.405
+!MESSAGE Constraint "com.tibco.bw.sharedresource.trinity.ssl.editor.com.tibco.trinity.ssl.editor.invalid.remote.host.constraint" could not find target EMF type "SSLServerConfiguration."
+
+!ENTRY org.eclipse.bpel.validator 1 0 2016-04-28 13:16:14.665
+!MESSAGE Validator Startup 18ms
+
+!ENTRY org.eclipse.ui 2 2 2016-04-28 13:18:04.023
+!MESSAGE Invalid preference category path: tibco.preference.category.soa_platform (bundle: com.tibco.amf.tools.composite.editor, page: com.tibco.amf.sca.model.composite.diagram.general)
