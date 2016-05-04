@@ -6,10 +6,10 @@
     <groupId>com.tibco.bw</groupId>
     <artifactId>bwcfapps.parent</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <relativePath>..</relativePath>
+    <relativePath>/users/Ro/git/example1/r1</relativePath>
   </parent>
   <artifactId>Demo1.application</artifactId>
-  <packaging>ear</packaging>
+  <packaging>bwear</packaging>
   <properties>
     <property.file>../pcfdev.properties</property.file>
   </properties>
