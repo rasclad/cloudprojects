@@ -9,7 +9,7 @@
     <relativePath>..</relativePath>
   </parent>
   <artifactId>Demo1.application</artifactId>
-  <packaging>bwear</packaging>
+  <packaging>ear</packaging>
   <properties>
   <property.file>../pcfdev.properties</property.file>
   </properties>
