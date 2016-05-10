@@ -1,3 +1,0 @@
-JDBC_DB_URL=jdbc\:hsqldb\:file\:<path>
-JDBC_DRIVER=org.hsqldb.jdbc.JDBCDriver
-eclipse.preferences.version=1
