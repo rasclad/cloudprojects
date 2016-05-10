@@ -9,7 +9,7 @@
     <relativePath>..</relativePath>
   </parent>
   <artifactId>Demo1</artifactId>
-  <packaging>bwmodule</packaging>
+  <packaging>ear</packaging>
   <dependencies>
     <dependency>
       <groupId>com.tibco.plugins</groupId>
